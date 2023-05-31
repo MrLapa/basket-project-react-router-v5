@@ -14,7 +14,7 @@ const Home = () => {
       <h3 className="header text-center">Select a team</h3>
       <div className="home-grid">
         {response.map((team) => (
-          <Link to={`${team}`}>
+          <Link key={team} to={`${team}`}>
             <TeamLogo id={team} />
           </Link>
         ))}
