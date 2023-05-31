@@ -25,7 +25,7 @@ const Sidebar = ({ title, list }) => {
             key={item}
             to={{ pathname: `${url}/${slug(item)}`, search: location.search }}
           >
-            {item}
+            {item.toUpperCase()}
           </CustomLink>
         ))}
       </ul>
