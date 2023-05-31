@@ -22,8 +22,11 @@ const Sidebar = ({ title, list }) => {
       <ul className="sidebar-list">
         {list.map((item) => (
           <CustomLink
+            key={item}
             to={{ pathname: `${url}/${slug(item)}`, search: location.search }}
-          />
+          >
+            {item}
+          </CustomLink>
         ))}
       </ul>
     </div>
