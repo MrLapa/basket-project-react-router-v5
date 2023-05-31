@@ -5,6 +5,7 @@ import Teams from "./Teams";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import NotFound from "./NotFound";
+import TeamPage from "./TeamPage";
 
 export default function App() {
   return (
@@ -20,6 +21,9 @@ export default function App() {
           </Route>
           <Route path="/teams">
             <Teams />
+          </Route>
+          <Route path="/:teamId">
+            <TeamPage />
           </Route>
           <Route path="*">
             <NotFound />
