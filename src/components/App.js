@@ -6,6 +6,7 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import NotFound from "./NotFound";
 import TeamPage from "./TeamPage";
+import Article from "./Articles";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
           </Route>
           <Route path="/teams">
             <Teams />
+          </Route>
+          <Route path="/:teamId/articles">
+            <Article />
           </Route>
           <Route path="/:teamId">
             <TeamPage />
